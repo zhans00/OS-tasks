@@ -1,5 +1,5 @@
 # CFS
-A simple simulator for the CFS scheduler.
+A simple simulator of the CFS scheduler.
 
 How to run:
 
