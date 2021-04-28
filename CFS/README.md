@@ -14,6 +14,6 @@ How to run:
     For example, $ gcc main.c -o main.out
                  $ ./main.out -file processes.txt
 
-Structure of the .txt file is the following:
+	Structure of the .txt file is the following:
     The first line: the number of processes
     Next n lines: priority, burst time, and arrival time of each process.
