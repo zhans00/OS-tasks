@@ -2,6 +2,7 @@
 A simple simulator for the CFS scheduler.
 
 How to run:
+
     1) to generate random values, provide the number of processes as argument. 
     For example, $ gcc main.c -o main.out
                  $ ./main.out 5
