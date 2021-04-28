@@ -1,19 +1,9 @@
-# CFS
-A simple simulator of the CFS scheduler.
+An argument from the user corresponding to a Linux command or process. If the process exists, the parent process creates three children where each of them performs one of the
+following tasks:
 
-How to run:
+    1) First child: to execute and display where this command exists in the disk 
+    2) Second child: to execute and display the manual page of this command in a new terminal window
+    3) Third child: to open a firefox tab displaying the google search page of the word the user entered
 
-    1) to generate random values for priority, burst and arrival times, provide the number of processes as argument. 
-    For example, $ gcc main.c -o main.out
-                 $ ./main.out 5
-    Here, 5 is the number of processes.
-
-    2) to run with specific values, provide two arguments: 
-    "-file" and the name of the .txt file with processes.
-
-    For example, $ gcc main.c -o main.out
-                 $ ./main.out -file processes.txt
-
-	Structure of the .txt file is the following:
-    The first line: the number of processes
-    Next n lines: priority, burst time, and arrival time of each process.
+If the process does not exist, an error message is displayed.
+The parent process waits the children to terminate before it terminates the program.
