@@ -1,4 +1,4 @@
-An argument from the user corresponding to a Linux command or process. If the process exists, the parent process creates three children where each of them performs one of the
+Get an argument from the user corresponding to a Linux command or process. If the process exists, the parent process creates three children where each of them performs one of the
 following tasks:
 
     1) First child: to execute and display where this command exists in the disk 
