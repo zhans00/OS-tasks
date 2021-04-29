@@ -91,7 +91,7 @@ double get_weight(int prior) {
     return 45.0/prior;
 }
 
-/* computer response time */
+/* compute response time */
 void add_response(process procs[]) {
     for (int i = start; i < end; ++i) {
         if(!(&procs[i])->runned){
@@ -100,7 +100,7 @@ void add_response(process procs[]) {
     }
 }
 
-/* computer wait time for the waiting processes */
+/* compute wait time for the waiting processes */
 void add_wait(process procs[]) {
     for (int i = start; i < end; ++i) {
         (&procs[i])->waiting_time +=1;
